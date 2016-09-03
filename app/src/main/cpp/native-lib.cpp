@@ -10,6 +10,7 @@ Java_com_example_aditya_hellondk_MainActivity_stringFromJNI(
     return env->NewStringUTF(hello.c_str());
 }
 
+extern "C"
 jstring
 Java_com_example_aditya_hellondk_MainActivity_stringAnother(JNIEnv *env, jobject) {
     std::string anotherString = "The code is changed now";
